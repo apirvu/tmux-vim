@@ -23,3 +23,4 @@ antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
 
 # Tell antigen that you're done.
 antigen apply
+DISABLE_AUTO_TITLE="true"
