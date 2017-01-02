@@ -4,7 +4,7 @@ this setup works only on debian linux  and cygwin for now
 For cygwin installation to work you should have wget package installed with cygwin
 
 To use the setup:
-  -  `./install_tmux+vim.sh [cygwin|debian]`
+  -  `./install <Options> [cygwin|debian]` (e.g. `./install -s zsh debian` )
   
 Usage :
   - `^a` (CTRL+a) is the new prefix instead of `^b` 
@@ -16,3 +16,6 @@ Usage :
 Hints :
   - Go through `~/.tmux.conf` and review the changed binds
   - Sometimes Yank plugin for copying to clipboard breaks the UI. Use `^a + r` to fix it fast
+  
+## Enjoy :smirk: :
+![alt tag](https://raw.githubusercontent.com/adrian-galbenus/tmux-vim/develop/tmux%2Bvim.png)

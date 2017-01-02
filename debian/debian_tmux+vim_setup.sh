@@ -55,7 +55,7 @@ then
 	if grep -q "alias tmux=" ~/.zshrc ; then
 		echo "tmux alias is allready set in ~/.zshrc"
 	else
-		sed -i -e "1s|^|alias tmux='tmux -2' \nalias tma='tmux a -t' \nalias tmk='tmux kill-session -t' \nexport LC_ALL=C \n | " ~/.zshrc
+		sed -i -e "1s|^|alias tmux='tmux -2' \nalias tma='tmux a -t' \nalias tmk='tmux kill-session -t' \n | " ~/.zshrc
 	fi
 
 fi
