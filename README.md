@@ -4,7 +4,7 @@ this setup works only on debian linux  and cygwin for now
 For cygwin installation to work you should have wget package installed with cygwin
 
 To use the setup:
-  -  `./install_tmux+vim.sh <Options> [cygwin|debian]` (e.g. `./install_tmux+vim.sh -s zsh debian` )
+  -  `./install <Options> [cygwin|debian]` (e.g. `./install -s zsh debian` )
   
 Usage :
   - `^a` (CTRL+a) is the new prefix instead of `^b` 
