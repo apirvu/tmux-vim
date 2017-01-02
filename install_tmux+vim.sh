@@ -7,9 +7,9 @@ function usage
 {
 	echo -e "\nUsage: $0 <options> [OS]
 		       - OS: [cygwin|debian]
-			   - Options :
-			        -s|--shell: Will install provided shell. Can be only [zsh] for now.
-				                (default is bash)"
+		       - Options :
+			          -s|--shell: Will install provided shell. Can be only [zsh] for now.
+				              "
 
 	exit 1
 }
