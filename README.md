@@ -17,4 +17,4 @@ Hints :
   - Go through `~/.tmux.conf` and review the changed binds
   - Sometimes Yank plugin for copying to clipboard breaks the UI. Use `^a + r` to fix it fast
 
-https://raw.githubusercontent.com/adrian-galbenus/tmux-vim/develop/tmux%2Bvim.png
+![alt tag](https://raw.githubusercontent.com/adrian-galbenus/tmux-vim/develop/tmux%2Bvim.png)
