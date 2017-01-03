@@ -51,7 +51,7 @@ fi
 command -v zsh | sudo tee -a /etc/shells
 chsh -s $(which zsh) "${USER}" 
 
-curl https://cdn.rawgit.com/zsh-users/antigen/v1.3.2/bin/antigen.zsh >  ~/.antigen.zsh
+curl -k https://cdn.rawgit.com/zsh-users/antigen/v1.3.2/bin/antigen.zsh >  ~/.antigen.zsh
 cp -rf  ../dotfiles/.zshrc ~/
 
 rm -rf zsh 
