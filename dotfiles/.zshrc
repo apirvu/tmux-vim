@@ -1,12 +1,14 @@
 alias chrome='chromium-browser'
 alias github='chromium-browser https://github.com'
-
+alias c='clear &&'
 alias tmux='tmux -2' 
 alias tma='tmux a -t' 
 alias tmk='tmux kill-session -t' 
 export LANGUAGE=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+setxkbmap -layout us -option ctrl:nocaps
+
 
 source ~/.antigen.zsh
 
