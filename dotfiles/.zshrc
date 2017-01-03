@@ -19,7 +19,6 @@ antigen bundle heroku
 antigen bundle pip
 antigen bundle lein
 antigen bundle command-not-found
-antigen bundle vi-mode
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -31,10 +30,3 @@ antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
 # Tell antigen that you're done.
 antigen apply
 DISABLE_AUTO_TITLE="true"
-#
-# Vi mode
-bindkey -v
-# VI_MODE
-SPACESHIP_VI_MODE_SHOW=true
-SPACESHIP_VI_MODE_INSERT="[I]"
-SPACESHIP_VI_MODE_NORMAL="[N]"
