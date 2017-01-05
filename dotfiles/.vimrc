@@ -1,19 +1,17 @@
 set rtp+=~/.vim/bundle/vundle/
 call vundle#begin()
-let mapleader = ',' 
+let mapleader = ','
 " let vundle manage vundle
 Plugin 'gmarik/vundle'
-
 " list all plugins that you'd like to install here
 Plugin 'kien/ctrlp.vim' " fuzzy find files
 Plugin 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
-Plugin 'benmills/vimux'
-Plugin 'tpope/vim-fugitive' " the ultimate git helper
-Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in visual mode
+Plugin 'benmills/vimux'                                                    Plugin 'tpope/vim-fugitive' " the ultimate git helper                      Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in visual mode
 Plugin 'morhetz/gruvbox'
 Plugin 'mileszs/ack.vim'
 Plugin 'artur-shaik/vim-javacomplete2'
 Plugin 'ervandew/supertab'
+Plugin 'jiangmiao/auto-pairs'
 call vundle#end()
 
 :silent! colorscheme gruvbox
@@ -39,41 +37,28 @@ set nowritebackup
 set noswapfile
 set number
 
-"Open a new tab and search for something 
+imap jk <ESC>la
 imap jj <ESC><right>
-imap {<Space> {<Space><Space>}<left><left>
-imap { {}<left>
-imap {<CR> {<CR><CR>}<Up>;<Esc>==i
-
-imap ( ()<left>
-inoremap <silent> (. ().<C-x><C-o>
-inoremap <silent> (- ()-><C-x><C-o>
-imap (<space> (<space><space>)<left><left>
-
-imap [ []<left>
-imap [<space> [<space><space>]<left><left>
-
-
-imap < <><left>
-imap <<space> <<space><space>><left><left>
-
-inoremap " ""<left>
-inoremap "" ""
-
 
 set wildmenu
 set wildchar=<TAB>
 set wildmode=list:longest
-
 set backspace=indent,eol,start
 
-nmap<leader>p :CtrlP 
+set pastetoggle=<F10>
+map <F7> mzgg=G`z
+inoremap <C-p> <F10><C-r>+<F10>
+set backspace=indent,eol,start
+nmap<leader>p :CtrlP
 
-"Open a new tab and search for something 
+"Open a new tab and search for something
 nmap<leader>A :tab split<CR>:Ack ""<Left>
 
 "Imemdiately search for the word under the cursor in a new tab
 nmap<leader>a :tab split<CR>:Ack <C-r><C-w><CR>
+
+imap < <><left>
+imap <<space> <<space><space>><left><left>
 
 "Lazy moving lines
 "
@@ -88,4 +73,3 @@ inoremap <C-k> <ESC>:m .-2<CR>==gi
 " Visual mode
 vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
-
