@@ -42,18 +42,16 @@ sleep 5
 
 if [ $(which curl) ]
 then
-    curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+   curl -k https://cdn.rawgit.com/zsh-users/antigen/v1.3.2/bin/antigen.zsh >  ~/.antigen.zsh
 else
    sudo apt-get -y install curl
-   curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh 
+   curl -k https://cdn.rawgit.com/zsh-users/antigen/v1.3.2/bin/antigen.zsh >  ~/.antigen.zsh
 fi
 
-command -v zsh | sudo tee -a /etc/shells
-chsh -s $(which zsh) "${USER}" 
+sudo command -v zsh | sudo tee -a /etc/shells
+sudo chsh -s $(which zsh) "${USER}" 
 
-curl -k https://cdn.rawgit.com/zsh-users/antigen/v1.3.2/bin/antigen.zsh >  ~/.antigen.zsh
 cp -rf  ../dotfiles/.zshrc ~/
 
 rm -rf zsh 
-
 
