@@ -9,9 +9,8 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 #force caps act like control
-if [ $(which setxkbmap) ]; then
-setxkbmap -layout us -option ctrl:nocaps
-fi
+
+[[ -f $(which setxkbmap) ]] &&  setxkbmap -layout us -option ctrl:nocaps || echo "setxkbmap not found"
 
 
 source ~/.antigen.zsh
