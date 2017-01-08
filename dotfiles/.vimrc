@@ -23,12 +23,16 @@ let g:NERDTreeDirArrows=0
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
+
+set ttymouse=xterm2
+set mouse=a
+set ttyfast
 set encoding=utf-8
 set hlsearch
 set incsearch
 set background=dark
 set tabstop=4
-set shiftwidth=4
+set shiftwidth=2
 set nocompatible
 set t_Co=256
 syntax on
