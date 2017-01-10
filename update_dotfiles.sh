@@ -9,3 +9,4 @@ else
 	curl https://raw.githubusercontent.com/adrian-galbenus/tmux-vim/develop/dotfiles/.vimrc > ~/.vimrc
 	curl https://raw.githubusercontent.com/adrian-galbenus/tmux-vim/develop/dotfiles/.zshrc > ~/.zshrc
 fi	
+#test
