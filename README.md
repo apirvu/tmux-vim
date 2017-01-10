@@ -6,8 +6,7 @@ For cygwin installation to work you should have wget package installed with cygw
 To use the setup:
   -  `./install <Options> [cygwin|debian]` (e.g. `./install -s zsh debian` )
   
-Usage :
-  - `^a` (CTRL+a) is the new prefix instead of `^b` 
+Usage : 
   - `tmux new -s <session_name>` - creates new session
   -  Hit `^a + I` to fetch the plugins and source them. You should now be able to use the plugins.
   - `tma <session_name>` - attach to session
